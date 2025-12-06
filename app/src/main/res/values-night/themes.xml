@@ -1,0 +1,17 @@
+<resources>
+    <!-- FIX: Parent theme MUST match your M2 dependency -->
+    <style name="Base.Theme.Amazon" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here -->
+    </style>
+
+    <style name="Theme.Amazon" parent="Base.Theme.Amazon" />
+
+    <!-- Splash Screen theme is correct -->
+    <style name="Theme.App.splashscreen" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/white</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/amazon_app_logo</item>
+        <item name="postSplashScreenTheme">@style/Theme.Amazon</item>
+    </style>
+</resources>
+
+
